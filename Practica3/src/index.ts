@@ -39,4 +39,26 @@ let nums: number[] = [1, 2, 3]
 let checks: boolean[] = []
 let nums2: Array<number> = []
 
-animales.map(x => x.)
+//nums.map(x => x.) // el autocompletado sugiere métodos del tipo de dato
+
+let tupla: [number, string[]] = [1, ['chanchito felis', 'chanchito felipe']]
+
+const chica = 's'
+const mediana = 'm'
+const grande = 'l'
+const extragrande = 'xl'
+
+//PascalCase
+enum Talla { Chica = 's', Mediana = 'm', Grande = 'l', ExtraGrande= 'xl' }
+
+const variable1 = Talla.Grande
+console.log(Talla.Grande);
+
+const enum LoadingState { Idle, Loading, Success, Error }
+
+const estado = LoadingState.Success
+
+const objeto: {
+    id: number
+    nombre?: string
+} = { id: 1 }
