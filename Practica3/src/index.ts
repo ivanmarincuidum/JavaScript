@@ -58,7 +58,29 @@ const enum LoadingState { Idle, Loading, Success, Error }
 
 const estado = LoadingState.Success
 
-const objeto: {
-    id: number
-    nombre?: string
-} = { id: 1 }
+type Direccion = {
+    numero: number,
+    calle: string,
+    pais: string
+}
+
+type Persona = {
+    readonly id: number,
+    nombre: string,
+    talla: Talla,
+    direccion: Direccion
+
+}
+
+const objeto: Persona = {
+    id: 1,
+    nombre: 'Hola Mundo',
+    talla: Talla.Mediana,
+    direccion: {
+        numero: 1,
+        calle: 'Siempre viva',
+        pais: 'Chanchitolandia'
+    }
+}
+
+const arr: Persona[] = []
